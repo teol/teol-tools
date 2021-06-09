@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Provider\Cloud;
+namespace App\Provider\Cloud;
 
 interface CloudProviderInterface
 {
@@ -20,10 +20,6 @@ interface CloudProviderInterface
     ): array;
 
     public function deleteSnapshot(int $id): bool;
-
-    //public function getSnapshotActions(int $imageId): array;
-
-    //public function getSnapshotAction(int $imageId, int $actionId): array;
 
     public function deleteOldestSnapshot(int $serverId): bool;
 

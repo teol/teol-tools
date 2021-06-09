@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace App\Command;
 
 use App\Provider\Healthchecks\Healthchecks;
-use Provider\Cloud\Hetzner\HetznerProvider;
-use Provider\Cloud\CloudProviderInterface;
-use Provider\Cloud\CloudProviderResolver;
+use App\Provider\Cloud\Hetzner\HetznerProvider;
+use App\Provider\Cloud\CloudProviderInterface;
+use App\Provider\Cloud\CloudProviderResolver;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Input\InputArgument;

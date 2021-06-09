@@ -16,7 +16,7 @@ services:
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
 
     _instanceof:
-        Provider\Cloud\CloudProviderInterface:
+        App\Provider\Cloud\CloudProviderInterface:
             tags:
                 - { name: app.cloud_provider }
 
@@ -41,11 +41,11 @@ services:
 
     # Providers
     # ---------------------------
-    Provider\Cloud\CloudProviderResolver:
+    App\Provider\Cloud\CloudProviderResolver:
         arguments:
             $providers: !tagged app.cloud_provider
 
-    Provider\Cloud\Hetzner\HetznerProvider:
+    App\Provider\Cloud\Hetzner\HetznerProvider:
         arguments:
             $apiToken: '%env(resolve:HETZNER_API_TOKEN)%'
             $apiBaseUrl: '%env(resolve:HETZNER_API_URL)%'

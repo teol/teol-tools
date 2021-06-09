@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Provider\Cloud\Hetzner;
+namespace App\Provider\Cloud\Hetzner;
 
-use Provider\Cloud\CloudProviderInterface;
+use App\Provider\Cloud\CloudProviderInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class HetznerProvider implements CloudProviderInterface

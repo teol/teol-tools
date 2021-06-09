@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Provider\Cloud;
+namespace App\Provider\Cloud;
 
 use App\Exception\ProviderNotFoundException;
-use Provider\Cloud\CloudProviderInterface;
+use App\Provider\Cloud\CloudProviderInterface;
 
 class CloudProviderResolver
 {
